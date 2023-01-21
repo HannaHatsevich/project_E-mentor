@@ -1,0 +1,28 @@
+@import '../vars/vars.scss';
+
+// миксины
+// сброс стилей
+// контейнер
+// общие кнопки и елементы
+
+@mixin fc() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: $f;
+    color: $bl;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a {
+    text-decoration: none;
+}
