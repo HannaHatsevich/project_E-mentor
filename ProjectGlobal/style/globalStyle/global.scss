@@ -12,7 +12,6 @@
 }
 
 .body {
-    color: $bl;
     background-color: $wt;
     font-family: $f;
 
@@ -22,13 +21,13 @@
     width: 100%;
     margin: 0 auto;
     background-color: $gr;
-    font-family: $f;
 }
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    font-family: $f;
 }
 a {
     text-decoration: none;
@@ -48,7 +47,6 @@ a {
     @media (max-width:430px) {
         font-size: 35px;
     }
-
 }
 .text {
     font-weight: 400;
@@ -69,3 +67,26 @@ a {
     font-weight: 500;
     font-size: 16px;
 }
+.main__benefitc-item {
+    max-width: 270px;
+    @include fc;
+    flex-direction: column;
+    .main__benefitc-number {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 100%;
+        color: $gr;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        @media(max-width:1070px) {
+            font-size: 40px;
+        }
+    }
+    .main__benefitc-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: $bl;
+    }
+   }

@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 .body {
-  color: #353A5A;
   background-color: #E5E5E5;
   font-family: "Raleway", sans-serif;
 }
@@ -13,7 +12,6 @@
   width: 100%;
   margin: 0 auto;
   background-color: #10B582;
-  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -21,6 +19,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -70,10 +69,37 @@ a {
   color: #E5E5E5;
   font-weight: 500;
   font-size: 16px;
+}
+
+.main__benefitc-item {
+  max-width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__benefitc-item .main__benefitc-number {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 100%;
+  color: #10B582;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+@media (max-width: 1070px) {
+  .main__benefitc-item .main__benefitc-number {
+    font-size: 40px;
+  }
+}
+.main__benefitc-item .main__benefitc-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #353A5A;
 }
 
 .body {
-  color: #353A5A;
   background-color: #E5E5E5;
   font-family: "Raleway", sans-serif;
 }
@@ -83,7 +109,6 @@ a {
   width: 100%;
   margin: 0 auto;
   background-color: #10B582;
-  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -91,6 +116,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -140,11 +166,40 @@ a {
   color: #E5E5E5;
   font-weight: 500;
   font-size: 16px;
+}
+
+.main__benefitc-item {
+  max-width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__benefitc-item .main__benefitc-number {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 100%;
+  color: #10B582;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+@media (max-width: 1070px) {
+  .main__benefitc-item .main__benefitc-number {
+    font-size: 40px;
+  }
+}
+.main__benefitc-item .main__benefitc-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #353A5A;
 }
 
 .header {
   min-height: 800px;
   color: #FDFDFD;
+  margin-bottom: 120px;
 }
 .header .nav {
   max-width: 650px;
@@ -241,7 +296,7 @@ a {
   text-align: center;
   color: #E5E5E5;
 }
-@media (min-width: 640px) {
+@media (min-width: 641px) {
   .header .header__block .header__block-center .header__block-center-img {
     display: none;
   }
@@ -282,4 +337,63 @@ a {
   font-size: 14px;
   line-height: 100%;
   color: #E5E5E5;
+}
+
+.main__benefitc {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+@media (max-width: 1070px) {
+  .main__benefitc {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 568px) {
+  .main__benefitc {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+.main__team-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 120px 0;
+  color: #353A5A;
+}
+@media (max-width: 1150px) {
+  .main__team-wrapper {
+    flex-direction: column;
+  }
+}
+.main__team-wrapper .main__team-info {
+  max-width: 500px;
+}
+.main__team-wrapper .main__team-info .main__team-title {
+  margin-bottom: 20px;
+}
+.main__team-wrapper .main__team-info .main__team-text-one {
+  margin: 20px 0 50px 0;
+}
+.main__team-wrapper .main__team-info .main__team-btn {
+  background-color: #10B582;
+}
+.main__team-wrapper .main__team-img {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+}
+.main__team-wrapper .main__team-img .main__team-item {
+  max-width: 170px;
+}
+.main__team-wrapper .main__team-img .main__team-item .main__team-item-text {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 130%;
 }/*# sourceMappingURL=stylePageFirst.css.map */

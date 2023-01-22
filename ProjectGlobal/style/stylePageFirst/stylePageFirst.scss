@@ -5,6 +5,7 @@
 .header {
     min-height: 800px;
     color: #FDFDFD;
+    margin-bottom: 120px;
     .nav {
         max-width: 650px;
         display: flex;
@@ -89,7 +90,7 @@
                 color: $wt;
             }
             .header__block-center-img {
-                @media(min-width:$md) {
+                @media(min-width:641px) {
                     display: none; 
                 }
             }
@@ -123,11 +124,67 @@
                 font-size: 14px;
                 line-height: 100%;
                 color: $wt;
-
                } 
-
             }
         }
     }
 }
+.main__benefitc {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    @media(max-width:1070px) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        row-gap: 40px;
+    }
+    @media(max-width:568px) {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+}
+.main__team-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 0;
+    color: $bl;
+    @media(max-width:1150px) {
+        flex-direction: column;
+    }
+    .main__team-info {
+        max-width: 500px;
 
+        .main__team-title {
+            margin-bottom: 20px;
+        }
+        .main__team-text-one {
+            margin: 20px 0 50px 0;
+        }
+        .main__team-btn {
+            background-color: $gr;
+        }
+    }
+    .main__team-img {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 30px;
+        // @media(max-width:1150px) {
+        //     grid-template-columns: repeat(2, auto);
+        //     grid-template-rows: repeat(3, auto);
+        //     gap: 30px;
+        // }
+
+        .main__team-item {
+            max-width: 170px;
+
+            .main__team-item-text {
+                text-align: center;
+                padding-top: 15px;
+                font-size: 14px;
+                line-height: 130%;
+            }
+        }
+    }
+}
