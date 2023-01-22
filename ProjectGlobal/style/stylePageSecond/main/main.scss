@@ -1,0 +1,54 @@
+@import '/ProjectGlobal/style/vars/vars.scss';
+
+.main__img {
+  margin-top: 40px;
+}
+.main__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  .main__about-item {
+    width: 370px;
+    height: auto;
+  }
+}
+.main__title-third {
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: #353a5a;
+  width: 870px;
+  height: auto;
+}
+.main__motivation {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0 60px 0;
+}
+.main__actual {
+  display: flex;
+  flex-direction: row;
+  padding: 120px 0;
+  justify-content: space-between;
+  color: #fdfdfd;
+  
+  .main__actual-text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+   
+    .main__text {
+      width: 478px;
+      margin: 20px 0 50px;
+      color: #fdfdfd;
+    }
+  }
+
+  .main__actual-item {
+    border-radius: 120px 0px 0px 0px;
+    width: 570px;
+    height: 316px;
+  }
+}

@@ -140,4 +140,116 @@ a {
   color: #E5E5E5;
   font-weight: 500;
   font-size: 16px;
+}
+
+.header__container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__container .nav {
+  display: flex;
+  flex-direction: row;
+  width: 540px;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header__container .nav {
+    justify-content: end;
+  }
+}
+@media (max-width: 768px) {
+  .header__container .nav__element {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header__container .header__burger {
+    display: none;
+  }
+}
+
+.header__breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.header__breadcrumbs img {
+  padding: 0 15px 0 15px;
+}
+.header__breadcrumbs .header__breadcrumbs-unselected {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #353a5a;
+}
+.header__breadcrumbs .header__breadcrumbs-selected {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #353a5a;
+  opacity: 0.5;
+}
+
+.main__img {
+  margin-top: 40px;
+}
+
+.main__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main__about .main__about-item {
+  width: 370px;
+  height: auto;
+}
+
+.main__title-third {
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: #353a5a;
+  width: 870px;
+  height: auto;
+}
+
+.main__motivation {
+  display: flex;
+  justify-content: center;
+  padding: 90px 0 60px 0;
+}
+
+.main__actual {
+  background-color: #10b582;
+  display: flex;
+  flex-direction: row;
+  padding: 120px 0;
+  justify-content: space-between;
+  color: #fdfdfd;
+}
+.main__actual .main__actual-text {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main__actual .main__actual-text .main__text {
+  width: 478px;
+  margin: 20px 0 50px;
+  color: #fdfdfd;
+}
+.main__actual .main__actual-item {
+  border-radius: 120px 0px 0px 0px;
+  width: 570px;
+  height: 316px;
 }/*# sourceMappingURL=stylePageSecond.css.map */
