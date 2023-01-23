@@ -1,4 +1,4 @@
-@import '/ProjectGlobal/style/vars/vars.scss';
+@import "/ProjectGlobal/style/vars/vars.scss";
 
 .main__img {
   margin-top: 40px;
@@ -33,12 +33,12 @@
   padding: 120px 0;
   justify-content: space-between;
   color: #fdfdfd;
-  
+
   .main__actual-text {
     display: flex;
     flex-direction: column;
     width: fit-content;
-   
+
     .main__text {
       width: 478px;
       margin: 20px 0 50px;
@@ -50,5 +50,27 @@
     border-radius: 120px 0px 0px 0px;
     width: 570px;
     height: 316px;
+  }
+}
+.main__properties {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px 135px;
+  border: 1px solid black;
+
+  .main__element {
+    width: 270px;
+    height: auto;
+    background-color: #fdfdfd;
+    box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+    border-radius: 10px;
+    padding: 25px 15px;
+
+    .main__title-card {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
   }
 }
