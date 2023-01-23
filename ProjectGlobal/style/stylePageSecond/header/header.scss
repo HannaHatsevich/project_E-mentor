@@ -1,4 +1,6 @@
-@import '/ProjectGlobal/style/vars/vars.scss';
+@import url(/ProjectGlobal/style/vars/vars.scss);
+@import url(/ProjectGlobal/style/footer/footer.scss);
+@import url(/ProjectGlobal/style/globalStyle/global.scss);
 
 .header__container {
   padding-top: 40px;
@@ -20,6 +22,7 @@
   }
 
   .nav__element {
+    font-family: $f;
     @media (max-width: 768px) {
       display: none;
     }
@@ -39,6 +42,7 @@
   align-items: center;
   margin-top: 50px;
   margin-bottom: 60px;
+  
 
   img {
     padding: 0 15px 0 15px;
@@ -49,6 +53,7 @@
     font-size: 14px;
     line-height: 100%;
     color: #353a5a;
+    font-family: $f;
   }
   .header__breadcrumbs-selected {
     font-weight: 400;
@@ -56,5 +61,6 @@
     line-height: 100%;
     color: #353a5a;
     opacity: 0.5;
+    font-family: $f;
   }
 }

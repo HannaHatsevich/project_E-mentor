@@ -1,5 +1,5 @@
 @import '../globalStyle/global.scss';
-@import '../vars/vars.scss';
-@import '../footer/footer.scss';
+@import url(/ProjectGlobal/style/vars/vars.scss);;
+@import url(/ProjectGlobal/style/footer/footer.scss);;
 @import './header/header.scss';
 @import './main/main.scss';
