@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 .body {
-  color: #353A5A;
   background-color: #E5E5E5;
   font-family: "Raleway", sans-serif;
 }
@@ -11,7 +10,6 @@
   width: 100%;
   margin: 0 auto;
   background-color: #10B582;
-  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -19,6 +17,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -43,7 +42,7 @@ a {
 }
 @media (max-width: 430px) {
   .title {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 
@@ -68,4 +67,32 @@ a {
   color: #E5E5E5;
   font-weight: 500;
   font-size: 16px;
+}
+
+.main__benefitc-item {
+  max-width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__benefitc-item .main__benefitc-number {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 100%;
+  color: #10B582;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+@media (max-width: 1070px) {
+  .main__benefitc-item .main__benefitc-number {
+    font-size: 40px;
+  }
+}
+.main__benefitc-item .main__benefitc-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #353A5A;
 }/*# sourceMappingURL=footer.css.map */
