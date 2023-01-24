@@ -23,13 +23,13 @@
 
   .nav__element {
     font-family: $f;
-    @media (max-width: 768px) {
+    @media (max-width: 786px) {
       display: none;
     }
   }
 
   .header__burger {
-    @media (min-width: 768px) {
+    @media (min-width: 786px) {
       display: none;
     }
   }
